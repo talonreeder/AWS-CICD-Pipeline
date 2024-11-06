@@ -74,6 +74,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+                        		<skip>true</skip>
+                    		</configuration>
 			</plugin>
 
 			<!-- JaCoCo Maven Plugin -->
@@ -100,14 +103,14 @@
 	</build>
 	
 	<distributionManagement>
-        <repository>
-            <id>maven-releases</id>
-            <url>http://13.235.245.200:8081/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>maven-snapshots</id>
-            <url>http://13.235.245.200:8081/repository/maven-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
+	        <repository>
+	            <id>maven-releases</id>
+	            <url>http://54.234.92.85:8081/repository/maven-releases/</url>
+	        </repository>
+	        <snapshotRepository>
+	            <id>maven-snapshots</id>
+	            <url>http://54.234.92.85:8081/repository/maven-snapshots/</url>
+	        </snapshotRepository>
+    	</distributionManagement>
 
 </project>
